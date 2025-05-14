@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css"/>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="./src/scripts/javascript/array.js"></script>
+</head>
+<body class="container-fluid" onload="bodyload()">
+  <header class="bg-secondary text-white py-3">
+    <h3 class="text-center">To-Do</h3>
+    <p class="text-center">Your Appointments</p>
+  </header>
+
+  <div class="mt-3 w-50">
+    <!-- Input Section -->
+    <div class="input-group">
+      <input type="text" id="txtTask" placeholder="New Appointment" class="form-control"/>
+      <button onclick="AddClick()" class="btn btn-primary">
+        <i class="bi bi-calendar-date"></i> Add
+      </button>
+    </div>
+
+    <!-- Appointment List Section -->
+    <div class="my-4">
+      <label class="form-label fw-bold">
+        Your Appointments
+        <button onclick="SortAsc()" class="btn btn-success">
+          <i class="bi bi-sort-alpha-down"></i>
+        </button>
+        <button onclick="SortDesc()" class="btn btn-success">
+          <i class="bi bi-sort-alpha-up"></i>
+        </button>
+      </label>
+
+      <select class="form-select" size="3" id="lstAppointments"></select>
+      <label id="lblCount" class="form-label fw-bold"></label>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="mt-3">
+      <button onclick="EditClick()" class="btn btn-warning">
+        <i class="bi bi-pen-fill"></i> Edit
+      </button>
+      <button onclick="DeleteClick()" class="btn btn-danger">
+        <i class="bi bi-trash-fill"></i> Delete
+      </button>
+      <button onclick="ClearAllClick()" class="btn btn-outline-danger">
+        <i class="bi bi-trash-fill"></i> Clear All
+      </button>
+    </div>
+  </div>
+</body>
+</html>

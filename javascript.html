@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Mars Rover Photos</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        function bodyload() {
+            fetch('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=OMScIJLHXHC6uBrIDxJwGIM1RgTo31El6RqpEgmA')
+                .then(response => response.json())
+                .then(data => {
+                    data.photos.forEach(photo => {
+                        const card = document.createElement("div");
+                        card.className = "card m-2 p-2 shadow";
+                        card.style.width = "200px";
+                        card.innerHTML = `
+                            <img src="${photo.img_src}" alt="Mars Rover Photo" height="100" class="card-img-top">
+                            <div class="card-header text-center">
+                                <h6>ID: ${photo.id}</h6>
+                            </div>
+                            <div class="card-body">
+                                <dl class="mb-0">
+                                    <dt>Camera</dt>
+                                    <dd>${photo.camera.full_name}</dd>
+                                    <dt>Rover</dt>
+                                    <dd>${photo.rover.name}</dd>
+                                </dl>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a class="btn btn-dark w-100 bi bi-eye-fill" href="${photo.img_src}" target="_blank"> View</a>
+                            </div>
+                        `;
+                        document.querySelector("main").appendChild(card);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
+        }
+    </script>
+</head>
+<body class="container-fluid" onload="bodyload()">
+    <h2 class="text-center my-4">Mars Rover Photos</h2>
+    <main class="d-flex flex-wrap justify-content-center">
+        <!-- Cards will be appended here -->
+    </main>
+</body>
+</html>

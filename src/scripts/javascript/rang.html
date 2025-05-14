@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Range Checker</title>
+</head>
+<body>
+    <p id="output"></p>
+
+    <script>
+        function FindRange(val, min, max) {
+            let message = "";
+            if (val >= min && val <= max) {
+                message = `Your value ${val} is in the range of ${min} to ${max}`;
+            } else {
+                message = `Your value is out of range`;
+            }
+            document.getElementById("output").innerText = message;
+        }
+
+        const val = parseInt(prompt("Enter Value"));
+        const min = parseInt(prompt("Enter Min"));
+        const max = parseInt(prompt("Enter Max"));
+
+        if (!isNaN(val) && !isNaN(min) && !isNaN(max)) {
+            FindRange(val, min, max);
+        } else {
+            document.getElementById("output").innerText = "Please enter valid numeric values.";
+        }
+    </script>
+</body>
+</html>

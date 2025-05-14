@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOPPING DOC</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<style>
+  header {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .header-row-1 {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #eaeaea;
+  }
+
+  .header-row-2 {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .header-row-1 span {
+    padding-right: 20px;
+  }
+
+  .social {
+    color: gray;
+  }
+
+  .header-row-2 span {
+    padding-right: 20px;
+  }
+
+  /* .header-row-2{
+    font-size:20px ;
+  } */
+  .border-tittel {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .header-col-2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  article {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: Arial;
+  }
+
+  .bi-lightning-fill {
+    color: gold;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    height: 450px;
+    margin-top: 10px;
+  }
+
+  .woman-fashion {
+    background-image: url(./images/gril.2.jpg);
+    background-size: cover;
+  }
+
+  .man-fashion {
+    background-image: url(./images/man.3.jpg);
+    background-size: cover;
+  }
+
+  .kid-fashion {
+    background-image: url(./images/kids\ \(1\).jpg);
+    background-size: cover;
+  }
+
+  .main-tittle {
+    font-size: 50px;
+    font-family: serif;
+    color: white;
+    font-weight: bold;
+    text-shadow: 4px 2px 2px black;
+  }
+
+  .btn-shop {
+    background-color: white;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    width: 130px;
+    text-align: center;
+  }
+
+  .woman-fashion,
+  .man-fashion,
+  .kid-fashion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0.7;
+  }
+
+  .woman-fashion:hover,
+  .man-fashion:hover,
+  .kid-fashion:hover {
+    opacity: 1;
+    cursor: grab;
+  }
+
+  .woman-fashion:hover {
+    background-image: url(./images/gril\ 02.jpg);
+  }
+
+  .man-fashion:hover {
+    background-image: url(./images/man\ 03\ \(1\).jpg);
+  }
+
+  .kid-fashion:hover {
+    background-image: url(./images/kids\ 01.jpg);
+  }
+
+  section {
+    height: 1000px;
+  }
+
+
+
+  footer {
+    font-family: Arial;
+    padding: 20px;
+    background-color: black;
+    color: white;
+  }
+
+  .footer-row-1 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer-title {
+    font-size: 30px;
+    padding-bottom: 40px;
+  }
+
+  .email {
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    background-color: rgba(60, 59, 59, 0.658);
+    margin-right: 20px;
+  }
+
+  .subscribe {
+    display: inline-block;
+    padding: 20px;
+    width: 160px;
+    background-color: rgb(125, 124, 124);
+  }
+
+  .footer-row-2 {
+    display: grid;
+    grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .service-title {
+    display: block;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+
+  .service-title~span {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  address span {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .footer-aside-title {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+
+  aside span {
+    font-size: 20px;
+    padding-right: 10px;
+  }
+
+  /* scrollbar */
+  ::-webkit-scrollbar {
+    background-color: red;
+    width: 7px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius:100px;
+   
+  }
+</style>
+
+<body>
+  <header>
+    <div class="header-row-1">
+      <div>
+        <span class="bi bi-truck"><span>FREE SHIPPING WORLDWIDE</span></span>
+        <span>United States<span class="bi bi-chevron-down"></span></span>
+        <span>USD <span class="bi bi-chevron-down"></span></span>
+        <span>English<span class="bi bi-chevron-down"></span>
+      </div>
+      <div class="header-col-2">
+        <span>Shipping</span>
+        <span>FAQ</span>
+        <span>Contact</span>
+        <aside class="social">
+          <span class="bi bi-facebook"></span>
+          <span class="bi bi-twitter"></span>
+          <span class="bi-instagram"></span>
+          <span class="bi bi-opencollective"></span>
+        </aside>
+      </div>
+    </div>
+    <div class="header-row-2">
+      <div>
+        <span class="border-tittel">Shopping</span>
+      </div>
+      <div>
+        <nav>
+          <span>Home</span>
+          <span>Shop</span>
+          <span>Catalog</span>
+          <span>Pages</span>
+          <span>Blog</span>
+          <span>Docs</span>
+        </nav>
+      </div>
+      <div>
+        <span class="bi bi-search"></span>
+        <span class="bi bi-person"></span>
+        <span class="bi bi-heart"></span>
+        <span class="bi bi-cart3"></span>
+      </div>
+    </div>
+  </header>
+  <section>
+    <article>
+      <span class="bi bi-lightning-fill"></span>
+      <span> HAPPY HOLIDAY DEALS ON EVERYTHING</span>
+      <span class="bi bi-lightning-fill"></span>
+    </article>
+    <main>
+      <div class="woman-fashion">
+        <div class="main-tittle">Woman</div>
+        <div class="btn-shop">
+          Shop Woman <span class="bi bi-arrow-right"></span>
+        </div>
+      </div>
+      <div class="man-fashion">
+        <div class="main-tittle">Man</div>
+        <div class="btn-shop">
+          Shop Men <span class="bi bi-arrow-right"></span>
+        </div>
+      </div>
+      <div class="kid-fashion">
+        <div class="main-tittle">Kid</div>
+        <div class="btn-shop">
+          Shop Kids <span class="bi bi-arrow-right"></span>
+        </div>
+      </div>
+    </main>
+  </section>
+  <footer>
+    <div class="footer-row-1">
+      <div class="footer-title">Want style Ideas and Treats?</div>
+      <div>
+        <span class="email">Enter Email*</span>
+        <span class="subscribe">Subscribe</span>
+      </div>
+    </div>
+    <div class="footer-row-2">
+      <div>
+        <aside>
+          <div class="footer-aside-title">Shopper.</div>
+          <div>
+            <span class="bi bi-facebook"></span>
+            <span class="bi bi-twitter"></span>
+            <span class="bi bi-instagram"></span>
+            <span class="bi bi-youtube"></span>
+          </div>
+        </aside>
+      </div>
+      <div>
+        <span class="service-title">SUPPORT</span>
+        <span>Contact Us</span>
+        <span>FAQs</span>
+        <span>Size Guide</span>
+        <span>Shipping & Returns</span>
+      </div>
+      <div>
+        <span class="service-title">SHOP</span>
+        <span>Men's Shopping</span>
+        <span>Women's Shopping</span>
+        <span>Kids' Shopping</span>
+        <span>Discounts</span>
+      </div>
+      <div>
+        <span class="service-title">COMPANY</span>
+        <span>Our Story</span>
+        <span>Careers</span>
+        <span>Terms & Conditions</span>
+        <span>Privacy & Cookie policy</span>
+      </div>
+      <div>
+        <span class="service-title">CONTACT</span>
+        <address>
+          <span>1-202-555-0105</span>
+          <span>1-202-555-0106</span>
+          <span>help@shopper.com</span>
+        </address>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

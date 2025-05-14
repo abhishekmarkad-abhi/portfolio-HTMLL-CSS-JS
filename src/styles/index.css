@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: "Barlow", arial;
+}
+
+h1 {
+  padding: 20px;
+  text-align: center;
+  font-family: serif;
+
+}
+
+.it-img {
+  margin-left: 20px;
+}
+
+.right {
+  margin-right: 20px;
+}
+
+.log {
+  background-size: cover;
+}
+
+.title-p {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.bi-1-circle {
+  font-size: 70px;
+  color: rgb(121, 121, 20);
+  margin-right: 100%;
+}
+
+.do {
+  position: relative;
+  top: -19px;
+  left: 60px;
+  font-size: 15px;
+}
+
+.company {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.int3 {
+  border: 0.7px solid #7f7e7e;
+  width: 35%;
+  margin-left: 80px;
+  position: relative;
+  left: 66%;
+}
+
+.cro-img {
+  height: 77%;
+  width: 98%;
+  position: relative;
+  left: 50px;
+}
+
+:hover.cro-img {
+  border: 2px double;
+  color: rgb(7, 8, 7);
+  transform: scale(1.1);
+  opacity: 1;
+  cursor: grab;
+}
+.box{
+  border: #AFEEEE;
+  background-color:rgba(128, 128, 255, 0.66);
+ 
+}
+.bi-keyboard{
+  font-size: 60px;
+}
+.bi-wikipedia{
+  font-size: 60px;
+}
+.bi-wordpress{
+  font-size: 60px;
+}
+.bi-laptop{
+  font-size: 60px;
+}
+/* .company p{
+  font-family:  sans-serif;
+  font-size: 12px;
+} */
+.int-go{
+  width: 78%;
+  position: relative;
+  left: 70px;
+  bottom: -47px;
+  height: 208px;
+  cursor: grab;
+  border: 1px solid;
+}
+.leanth{
+  border: 0.7px solid #7f7e7e;
+  width: 433px;
+  /* margin-right: 116px; */
+  position: relative;
+  left: 4%;
+}
+.job-1-img{
+  width: 63%;
+  position: relative;
+  left: 65px;
+  bottom: -60px;
+  height: 176px;
+  cursor: grab;
+  border: 1px solid;
+}
+.bi-2-circle{
+  font-size: 70px;
+  color: rgb(232, 9, 9);
+  margin-right: 100%;
+}
+.bi-4-circle,
+.bi-3-circle{
+  font-size: 70px;
+  color: rgb(54 27 219);
+  margin-right: 100%;
+  position: relative;
+  top: 20px;
+  right: 10px;
+}
+.int2 {
+  border: 0.7px solid #7f7e7e;
+  width: 35%;
+  margin-left: 80px;
+  position: relative;
+  left: 67%;
+  bottom: -58px;
+}
+.bi-4-circle{
+  color: green;
+}
+.btn-call{
+  padding-top: 100px;
+  text-align: center;
+}
+.styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(122 122 122);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.styled:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+.box-2{
+  background-color: rgba(153, 153, 102, 0.66);
+  height: 400px;
+}
+.parentContainer{
+  width: 102%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  gap: 95px;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+}
+.child {
+  width: 25%;
+  height: 370px;
+  border: 2px solid;
+  padding: 20px;
+  box-shadow: 4px 4px 6px 3px;
+}
+.child img{
+  width: 313px;
+  height: 162px;
+  position: relative;
+  top: -15px;
+}
+.contain{
+  background-color:#AFEEEE ;
+  height: 30vh;
+}
+li{
+  list-style: none;
+}
+li,a,span{
+  color: #170303;
+}
+li,a{
+ color: #120c0c;
+}
+a{
+  color: brown;
+}

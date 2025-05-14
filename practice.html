@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .card {
+            border: 1px solid #ffffff;
+            padding: 10px;
+            box-shadow: 4px 6px 3px;
+            margin: 20px;
+            width: 204px;
+        }
+
+        .card:target {
+            background-color: #b10c0c;
+            color: white;
+            font-size: 20px;
+        }
+
+        .card:target h3 {
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#Raigad fort">Raigad fort</a></li>
+            <li><a href="#Ajintha leni">Ajintha leni</a></li>
+            <li><a href="#Sinhagad fort">Sinhagad fort</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="card" id="Raigad fort">
+            <h3>Raigad fort</h3>
+            <ul>
+                <li>Maharashtra,india</li>
+                <li>Raigad district</li>
+                <li>Mahad</li>
+            </ul>
+        </div>
+        <div class="card" id="Ajintha leni">
+            <h3>Ajintha leni</h3>
+            <ul>
+                <li>Maharashtra</li>
+                <li>Sambaji Nagar district</li>
+                <li>Buddhist religious</li>
+            </ul>
+        </div>
+        <div class="card" id="Sinhagad fort">
+            <h3>Sinhagad fort</h3>
+            <ul>
+                <li>Maharashtra</li>
+                <li>history of tanaji malusare</li>
+                <li>pune district</li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+    <style>
+        .lo{
+            
+            position: relative;
+            left: 110px;
+        }
+    </style>
+</head>
+
+<body>
+    <button data-bs-toggle="modal" data-bs-target="#login" class="btn btn-danger mt-4"><span
+            class="bi bi-person-circle"> login</span></button>
+            <button data-bs-toggle="modal" data-bs-target="#fashion"class="btn btn-danger mt-4"><span
+                class="bi bi-shop-window"> fastion</span></button>
+    <div class="modal fade" id="login">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="bi bi-person-circle">Login </h3>
+                    <button data-bs-dismiss="modal" class="btn btn-close"></button>
+                    <button data-bs-toggle="modal" data-bs-target="#Help"
+                        class="btn mx-3 btn-info bi bi-question-circle"></button>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt>User Name</dt>
+                        <dd><input type="name" class="form-control"></dd>
+                        <dt>password</dt>
+                        <dd><input type="password" class="form-control"></dd>
+                        <dt>Your City</dt>
+                        <dd><input type="text" class="form-control"></dd>
+                        <dt>Subscribe</dt>
+                        <dd><input checked class="form-check-input" type="checkbox"></dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-warning">Login</button>
+                    <button data-bs-dismiss class="btn btn-danger">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Help">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>HELP</h3>
+                    <marquee width="80%" bgcolor="yellow" scrollamount="5" direction="right" loop="20">Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Harum, numquam. Blanditiis ea unde numquam, alias et
+                        praesentium eveniet suscipit. Natus nihil eos vero saepe vitae nostrum rerum optio perspiciatis
+                        molestiae?</marquee>
+                    <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia facilis deserunt ut temporibus
+                        commodi officiis amet excepturi accusamus nobis totam! Sapiente alias blanditiis officia
+                        repellendus ratione nihil hic, amet vitae?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="fashion">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h1> Fashion</h1>
+                    <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <marquee width="100%" bgcolor="gray" scrollamount="5" direction="left" loop="20">70% OFF - Summer Sale Starts 05-Apr-2025</marquee>
+                    <img src="./images/gril 02.jpg" width="50%" height="100%" class="lo">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+<style>
+    .product {
+        display: grid;
+        grid-template-columns: 1fr 6fr 5fr;
+    }
+
+    .title {
+        font-size: 30px;
+        font-family: Bahnschrift;
+        padding-bottom: 10px;
+    }
+
+    .title:hover {
+        color: blue;
+        opacity: 1;
+        cursor: grab;
+    }
+
+    .reting {
+        background-color: green;
+        color: #ffffff;
+        border-radius: 9px;
+        padding: 2px;
+    }
+
+    .bi-star-fill {
+        font-size: 20px;
+        padding: 2px;
+        position: relative;
+        top: -4px;
+    }
+
+    .rev {
+        margin: 2px;
+        color: grey;
+    }
+
+    /* .offers{
+        list-style: none;
+        margin-left: -50px;
+    } */
+    .offers li {
+        color: #3b2828;
+        margin: 2px;
+        margin-right: -226px;
+        padding: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+   
+</style>
+
+<body>
+    <div class="product">
+        <div>
+            <img src="./images/iphone.jpg" alt="">
+        </div>
+        <div class="title">
+            Apple iPhone 16 (Teal, 256 GB)
+            <div>
+                <span class="reting">4.6<span class="bi bi-star-fill"></span></span>
+                <span class="rev">
+                    <font>66,816 Ratings & 319 Reviews</font>
+                </span>
+            </div>
+            <div>
+                <ul class="offers">
+                    <li>256 GB ROM</li>
+                    <li>15.49 cm (6.1 inch) Super Retina XDR Display</li>
+                    <li>48MP + 12MP | 12MP Front Camera</li>
+                    <li>A18 Chip, 6 Core Processor Processor</li>
+                    <li>1 year warranty for phone and 1 year warranty for in Box Accessories.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="product-2">
+            <font color="black" size="6" face="Arial"> &#8377;84.900</font><br>
+            <font><strike>&#8377;89.900</strike></font>
+            <font color="green" face="Arial">5% Off</font><br>
+            <span class="free">Free delivery</span><br>
+            <font color="green" face="Arial">Save extra with combo offers</font><br>
+            <font color="brown" face="Arial">Only 1 left</font>
+
+        </div>
+    </div>
+</body>
+
+</html>
