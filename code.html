@@ -1,0 +1,37 @@
+  <script>
+    //     function FetchData(url, success, failure)
+    //   {
+    //       if(url==="fakestore"){
+    //           success('Response data received');
+    //       } else {
+    //           failure('Unable to Fetch Data - Invalid URL');
+    //       }
+    //   }
+    //   FetchData(
+    //       prompt("Enter URL"),
+    //       function(response) {
+    //          document.write(response);
+    //       },
+    //       function(error){
+    //          document.write(error);
+    //       }
+    //   )
+    function FetchData( url,success,failure){
+      
+        if(url==="fakestore"){
+            success('Response data received');
+        }
+        else{
+            failure('Unamle to fatch Data - Invalid URL');
+        }
+    }
+    FetchData(
+        prompt("Enter URL"),
+        function(response){
+            document.write(response);
+        },
+        function(error){
+            document.write(error);
+        }
+    )
+  </script>

@@ -143,6 +143,7 @@ span {
   z-index: 1;
   animation: floatImage 4s ease-in-out infinite;
   box-shadow: 0 0 1rem var(--main-color);
+  background-color: #00d5ff;
 }
 
 /* Keyframe */
