@@ -1,0 +1,1 @@
+ PrintPattern(parselnt(prompt("Enter Number")));
