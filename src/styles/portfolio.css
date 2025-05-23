@@ -204,13 +204,17 @@ span {
 
 /* About Section */
 .about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4rem;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
   background: var(--snd-bg-color);
-  flex-wrap: wrap;
-  padding: 4rem 2rem;
+  /* flex-wrap: wrap; */
+  /* padding: 4rem 2rem; */
+}
+.col{
+  display: grid;
+  grid-template-columns:10fr 10fr 10fr;
+  gap: 10px;
 }
 
 .about-img-wrapper {
