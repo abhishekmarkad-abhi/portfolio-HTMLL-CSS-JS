@@ -157,10 +157,12 @@ body {
   text-decoration: none;
   border-radius: 30px;
   transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .btn:hover {
   background: #0056b3;
+  box-shadow: var(--main-color);
 }
 
 .home-img {
@@ -239,7 +241,7 @@ body {
   background: #f8f9fa;
   padding: 40px;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  box-shadow:0 10px 34px rgba(0, 0, 0, 2.05)
 }
 
 .about-content h2 {
@@ -314,17 +316,16 @@ body {
 } 
 
 /* SERVICES SECTION DESIGN */
-/* Services Page Specific Styling */
 .services-page {
   padding: 5rem 9%;
-  background: var(--bg-color);
+  background: #e9ecef;
 }
 
 .services-page .heading {
   text-align: center;
   font-size: 2.8rem;
   margin-bottom: 3rem;
-  color: var(--text-color);
+  color:var(--main-color);
 }
 
 .services-container {
@@ -398,6 +399,7 @@ body {
 
 .services-box .btn:hover {
   background-color: #17a2b8;
+ 
 }
 
 .services-box:hover {
@@ -517,7 +519,7 @@ body {
 }
 
 /* Responsive Design */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .portfolio {
     padding: 60px 30px;
   }
