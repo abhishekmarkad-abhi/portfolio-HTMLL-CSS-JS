@@ -1,248 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Portfolio Website</title>
+  <title>Abhishek Markad | Frontend Developer Portfolio</title>
+
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="src\styles\portfolio.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="src/styles/portfolio.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 </head>
 
 <body>
   <!-- Header -->
-<header class="header">
-  <a href="#" class="logo">MyPortfolio</a>
-  <i class="bi bi-list" id="menu-icon"></i>
+  <header class="header">
+    <a href="#" class="logo">MyPortfolio</a>
+    <i class="bi bi-list" id="menu-icon" aria-label="Toggle menu"></i>
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <nav class="navbar" id="navbar">
-    <a href="#home" class="active">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, I'm</h3>
+      <h1>Abhishek Markad</h1>
+      <h3>And I'm a <span class="multiple-text">Frontend Developer</span></h3>
+      <p>I build responsive, user-focused websites using HTML, CSS, JavaScript, and Bootstrap.</p>
 
-<!-- Home Section -->
-<section class="home" id="home">
-  <div class="home-content">
-    <h3>Hello, I'm</h3>
-    <h1>Abhishek Markad</h1>
-    <h3>And I'm a <span class="multiple-text">Frontend Developer</span></h3>
-
-    <p>I create responsive and interactive websites using HTML, CSS, JavaScript, and Bootstrap</p>
-
-    <div class="social-media">
-      <a href="https://www.facebook.com/"      target="_blank"><i class="bi bi-facebook"></i></a>
-      <a href="https://www.instagram.com/"     target="_blank"><i class="bi bi-instagram"></i></a>
-      <a href="https://x.com/"                 target="_blank"><i class="bi bi-twitter"></i></a>
-      <a href="https://www.linkedin.com/feed/" target="_blank"><i class="bi bi-linkedin"></i></a>
-    </div>
-
-    <a href="./docs/my_resume.pdf" class="btn" download="abhishek Markad">Download CV</a>
-  </div>
-
-  <div class="home-img">
-    <img src="images/self.img2-Photoroom.png" alt="Profile Image">
-  </div>
-</section>
-
-
-<!-- About Section -->
-<section class="about" id="about">
-  <h2 class="heading">About <span>Me</span></h2>
-  
-  <div class="about-container">
-    <div class="about-content">
-      <h2>Hi there, I'm Abhishek</h2>
-      <p>
-        A passionate and creative web developer based in <strong>Pune</strong>.
-        I specialize in building responsive, user-friendly websites using
-        HTML, CSS, JavaScript, and Bootstrap.
-      </p>
-
-      <ul class="personal-info">
-        <li><strong>Name:</strong> Abhishek Markad</li>
-        <li><strong>Age:</strong> 22</li>
-        <li><strong>Qualification:</strong> BCA, Pune University</li>
-        <li><strong>Email:</strong> abhishekmarkad9@gmail.com</li>
-        <li><strong>Education:</strong> Bachelor of Computer Applications – Pune University</li>
-        <li><strong>Location:</strong> Pune, India</li>
-      </ul>
-
-      <div class="skills">
-        <h3>Skills</h3>
-        <ul>
-          <li>HTML, CSS, JavaScript</li>
-          <li>Bootstrap, Tailwind</li>
-          <li>React (basic)</li>
-          <li>UI/UX Principles</li>
-          <li>Responsive Design</li>
-        </ul>
+      <div class="social-media">
+        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://x.com/" target="_blank" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.linkedin.com/feed/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
       </div>
 
-      <a href="#" class="btn">Read more</a>
+      <a href="./docs/my_resume.pdf" class="btn" download="Abhishek_Markad_CV">Download CV</a>
     </div>
-  </div>
-</section>
 
+    <div class="home-img">
+      <img src="images/self.img2-Photoroom.png" alt="Abhishek Markad Photo" loading="lazy" />
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <h2 class="heading">About <span>Me</span></h2>
+    <div class="about-container">
+      <div class="about-image">
+        <img src="images/self.img2-Photoroom.png" alt="Abhishek Markad" />
+      </div>
+      <div class="about-content">
+        <h3>Hello, I'm <span>Abhishek Markad</span></h3>
+        <p>I’m a creative and detail-oriented <strong>Frontend Developer</strong> from <strong>Pune</strong>, passionate about building responsive, user-focused web interfaces using modern technologies.</p>
+
+        <div class="personal-info-grid">
+          <div><strong>Name:</strong> Abhishek Markad</div>
+          <div><strong>Age:</strong> 22</div>
+          <div><strong>Qualification:</strong> BCA - Pune University</div>
+          <div><strong>Email:</strong> <a href="mailto:abhishekmarkad9@gmail.com">abhishekmarkad9@gmail.com</a></div>
+          <div><strong>Location:</strong> Pune, India</div>
+        </div>
+
+        <div class="skills-list">
+          <h4>Technical Skills</h4>
+          <ul>
+            <li><i class="bi bi-check-circle"></i> HTML, CSS, JavaScript</li>
+            <li><i class="bi bi-check-circle"></i> Bootstrap, Tailwind CSS</li>
+            <li><i class="bi bi-check-circle"></i> React (Basics)</li>
+            <li><i class="bi bi-check-circle"></i> UI/UX Design Principles</li>
+            <li><i class="bi bi-check-circle"></i> Responsive & Mobile-First Design</li>
+          </ul>
+        </div>
+
+        <a href="#portfolio" class="btn">Explore My Work</a>
+      </div>
+    </div>
+  </section>
 
   <!-- Services Section -->
-  <section class="services services-page"id="services">
-    <h2 class="heading">My<span>Services</span></h2>
-
+  <section class="services" id="services">
+    <h2 class="heading">My <span>Services</span></h2>
     <div class="services-container">
-
-      <!-- Web Development -->
       <div class="services-box">
-        <span aria-hidden="true"><i class="bi bi-code-slash"></i></span>
+        <i class="bi bi-code-slash"></i>
         <h3>Web Development</h3>
-        <p>
-          I develop modern, high-performance websites that are responsive and SEO-friendly using HTML, CSS, JavaScript, and Bootstrap.
-        </p>
+        <p>Clean, responsive websites built using modern frontend technologies.</p>
         <ul>
-          <li>Responsive Design</li>
-          <li>SEO Best Practices</li>
-          <li>Performance Optimization</li>
+          <li>HTML5 / CSS3 / JS</li>
+          <li>SEO Optimization</li>
+          <li>Performance Focused</li>
         </ul>
         <a href="#contact" class="btn">Hire Me</a>
       </div>
 
-      <!-- UI/UX Designing -->
       <div class="services-box">
-        <span aria-hidden="true"><i class="bi bi-palette-fill"></i></span>
-        <h3>UI/UX Designing</h3>
-        <p>
-          I create engaging, user-friendly designs using design tools and web best practices, ensuring a seamless experience across devices.
-        </p>
+        <i class="bi bi-palette-fill"></i>
+        <h3>UI/UX Design</h3>
+        <p>Designing intuitive interfaces with tools like Figma & Adobe XD.</p>
         <ul>
-          <li>Wireframes & Mockups</li>
-          <li>User-Centered Design</li>
-          <li>Figma & Adobe XD</li>
+          <li>User Research</li>
+          <li>Wireframes / Prototypes</li>
+          <li>Mobile-first Design</li>
         </ul>
         <a href="#contact" class="btn">View Designs</a>
       </div>
 
-      <!-- App Development -->
       <div class="services-box">
-        <span aria-hidden="true"><i class="bi bi-android"></i></span>
-       <h3>Android App Development</h3>
-        <p>
-          I build simple yet powerful mobile apps for Android with real-time features and smooth performance using modern tools.
-        </p>
+        <i class="bi bi-window-stack"></i>
+        <h3>Frontend Engineering</h3>
+        <p>Modern JS frameworks for fast, dynamic user interfaces.</p>
         <ul>
-          <li>Java/Kotlin (basic)</li>
-          <li>Firebase Integration</li>
-          <li>Clean UI Design</li>
+          <li>React.js (Basics)</li>
+          <li>Component Architecture</li>
+          <li>JS ES6+</li>
         </ul>
-        <a href="#contact" class="btn">Explore Apps</a>
+        <a href="#contact" class="btn">Hire Me</a>
       </div>
-
     </div>
   </section>
 
   <!-- Portfolio Section -->
   <section class="portfolio" id="portfolio">
-  <h2 class="heading">Latest <span>Projects</span></h2>
+    <h2 class="heading">Latest <span>Projects</span></h2>
+    <div class="portfolio-container">
+      <div class="portfolio-box">
+        <img src="images/open1.jpg" alt="Portfolio Project 1" />
+        <div class="portfolio-layer">
+          <h4>Web Design</h4>
+          <p>Responsive personal portfolio using HTML, CSS, and Bootstrap.</p>
+          <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+        </div>
+      </div>
 
-  <div class="portfolio-container">
-    <div class="portfolio-box">
-      <img src="images/open1.jpg" alt="Project 1">
-      <div class="portfolio-layer">
-        <h4>Web Design</h4>
-        <p>Responsive personal portfolio using HTML, CSS, and Bootstrap.</p>
-        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+      <div class="portfolio-box">
+        <img src="images/8pic.jpg" alt="Weather App Project" />
+        <div class="portfolio-layer">
+          <h4>Web App</h4>
+          <p>Weather app using JavaScript and real-time APIs.</p>
+          <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="images/code-3pic.jpg" alt="UI/UX Project" />
+        <div class="portfolio-layer">
+          <h4>UI/UX Design</h4>
+          <p>Landing page design with animations and clean layout.</p>
+          <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="images/code-4pic.jpg" alt="E-commerce Cart" />
+        <div class="portfolio-layer">
+          <h4>E-commerce</h4>
+          <p>Interactive cart UI built with Bootstrap and JS.</p>
+          <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="images/code-5pic.jpg" alt="Form UI Project" />
+        <div class="portfolio-layer">
+          <h4>Form UI</h4>
+          <p>Modern form design with validation and transitions.</p>
+          <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="images/7pic.jpg" alt="Advanced Portfolio" />
+        <div class="portfolio-layer">
+          <h4>Advanced Portfolio</h4>
+          <p>Fully responsive site with smooth scrolling and nav.</p>
+          <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+        </div>
       </div>
     </div>
-
-    <div class="portfolio-box">
-      <img src="images/8pic.jpg" alt="Project 2">
-      <div class="portfolio-layer">
-        <h4>Web App</h4>
-        <p>Weather app with real-time API integration.</p>
-        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
-      </div>
-    </div>
-
-    <div class="portfolio-box">
-      <img src="images/code-3pic.jpg" alt="Project 3">
-      <div class="portfolio-layer">
-        <h4>UI/UX Design</h4>
-        <p>Modern landing page with smooth transitions and layout.</p>
-        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
-      </div>
-    </div>
-
-    <div class="portfolio-box">
-      <img src="images/code-4pic.jpg" alt="Project 4">
-      <div class="portfolio-layer">
-        <h4>E-commerce</h4>
-        <p>Shopping cart design with Bootstrap and interactive buttons.</p>
-        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
-      </div>
-    </div>
-
-    <div class="portfolio-box">
-      <img src="images/code-5pic.jpg" alt="Project 5">
-      <div class="portfolio-layer">
-        <h4>Form UI</h4>
-        <p>Styled user forms with validation and animation.</p>
-        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
-      </div>
-    </div>
-
-    <div class="portfolio-box">
-      <img src="images/7pic.jpg" alt="Project 6">
-      <div class="portfolio-layer">
-        <h4>Portfolio</h4>
-        <p>Fully responsive portfolio site with section navigation.</p>
-        <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
   <!-- Contact Section -->
-<section class="contact" id="contact">
-  <h2 class="heading">Contact <span>Me</span></h2>
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+    <form action="#">
+      <div class="input-box">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+      </div>
+      <div class="input-box">
+        <input type="tel" placeholder="Mobile Number" required />
+        <input type="text" placeholder="Subject" required />
+      </div>
+      <textarea placeholder="Your Message" rows="7" required></textarea>
+      <input type="submit" value="Send Message" class="btn" />
+    </form>
+  </section>
 
-  <form action="#">
-    <div class="input-box">
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email Address" required>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <h3>Abhishek Markad</h3>
+        <p>Thank you for visiting my portfolio. Let’s connect and build something great together!</p>
+        <ul class="socials">
+          <li><a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="https://x.com/" target="_blank"><i class="bi bi-twitter-x"></i></a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+          <li><a href="mailto:abhishekmarkad9@gmail.com"><i class="bi bi-envelope-fill"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 <span>Abhishek Markad</span>. All Rights Reserved.</p>
+      </div>
+
+      <a href="#home" class="scroll-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up-circle-fill"></i>
+      </a>
     </div>
-    
-    <div class="input-box">
-      <input type="tel" placeholder="Mobile Number" required>
-      <input type="text" placeholder="Email Subject" required>
-    </div>
+  </footer>
 
-    <textarea cols="30" rows="10" placeholder="Your Message" required></textarea>
-    <input type="submit" value="Send Message" class="btn">
-  </form>
-</section>
-
-
-<!-- Footer Section -->
-<footer class="footer">
-  <div class="footer-text">
-    <p>&copy; 2025 by <span>@Abhishek</span> | All Rights Reserved</p>
-    <p class="credit">Made with ❤️ by <a href="https://www.linkedin.com/feed/" target="_blank">Linkedin</a></p>
-  </div>
-  <div class="footer-iconTop">
-    <a href="#home" aria-label="Back to top"><i class="bi bi-chevron-up"></i></a>
-  </div>
-</footer>
-
-
-  <!-- link js -->
+  <!-- JS Links -->
   <script src="https://unpkg.com/scrollreveal"></script>
-  <!-- type js -->
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <!-- main js -->
   <script src="src/scripts/protfolio.js"></script>
 </body>
-
 </html>
