@@ -201,77 +201,111 @@ section {
     display: block;
   }
 
+  #menu-icon:focus {
+    outline: 2px dashed var(--snd-bg-color);
+  }
+
   .navbar.active {
     display: flex;
   }
 }
-
 /* About Section Styles */
 .about.section {
   padding: 4rem 2rem;
-  background: var(--bg-color);
+  background: var(--text-color);
+  /* color: var(--text-color); */
 }
 
 .about-container {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 2rem;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2.5rem;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .about-image img {
   width: 100%;
   border-radius: 1rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.03);
 }
 
 .about-content h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
   color: var(--main-color);
+  font-weight: 600;
 }
 
 .about-content p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 2rem;
+  /* color: var(--text-color); */
 }
 
 .personal-info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 0.5rem 1rem;
+  gap: 1rem 2rem;
   margin-bottom: 2rem;
   font-size: 0.95rem;
-  color: var(--text-color);
+  /* color: var(--text-color); */
+}
+
+.personal-info-grid span {
+  display: block;
+  font-weight: 500;
 }
 
 .skills-list h4 {
-  margin-bottom: 0.75rem;
-  font-size: 1.1rem;
-  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  /* color: var(--main-color); */
+  font-weight: 600;
 }
 
 .skills-list ul {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .skills-list li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  color: var(--text-color);
+  gap: 0.6rem;
+  /* color: var(--text-color); */
+  font-size: 0.95rem;
 }
 
 .skills-list i {
-  color: var(--primary-color);
+  color: var(--main-color);
   font-size: 1.1rem;
 }
 
+/* Button inside About */
 .about-content .btn {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--main-color);
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.about-content .btn:hover {
+  background: darken(var(--main-color), 10%);
 }
 
 /* Responsive Fix */
@@ -280,11 +314,26 @@ section {
     grid-template-columns: 1fr;
     text-align: center;
   }
-  
+
+  .about-content h3 {
+    font-size: 2rem;
+  }
+
+  .about-image img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
   .personal-info-grid {
     grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .skills-list {
+    text-align: left;
   }
 }
+
 
 /* SERVICES SECTION DESIGN */
 .services-page {
@@ -613,6 +662,7 @@ form .btn:hover {
     min-height: 150px;
   }
 }
+
 /* Footer Section */
 .footer {
   background: linear-gradient(145deg, #1f1f1f, #2e2e2e);
@@ -628,7 +678,7 @@ form .btn:hover {
 .footer h3 {
   font-size: 2.4rem;
   margin-bottom: 15px;
-  color: var(--main-color);
+  color: var(--text-color);
   font-weight: 700;
   background: linear-gradient(45deg, #ff7e5f, #59b2f4);
   /* -webkit-background-clip: text; */
@@ -640,9 +690,11 @@ form .btn:hover {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -684,7 +736,8 @@ form .btn:hover {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   border-radius: 50%;
   opacity: 0;
   box-shadow: 0 0 10px var(--main-color);
@@ -709,6 +762,7 @@ form .btn:hover {
   0% {
     box-shadow: 0 0 5px var(--main-color), 0 0 15px var(--main-color);
   }
+
   100% {
     box-shadow: 0 0 20px var(--main-color), 0 0 40px var(--main-color);
   }
@@ -753,9 +807,12 @@ form .btn:hover {
 }
 
 @keyframes floatUpDown {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
